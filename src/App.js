@@ -21,15 +21,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Form onSubmit={e => { handleSubmit(e) }}>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Welcome to Nexus!</Form.Label>
-            <Form.Control onChange={e => setData(e.target.value)} />
-          </Form.Group>
-          <Button variant="outline-primary" type="submit">Send Data</Button>{''}
-        </Form>
-
+        <div className='pt-5 w-50 content'>
+          <img src={logo} className="App-logo" alt="logo" />
+          <Form onSubmit={e => { handleSubmit(e) }}>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Welcome to Nexus!</Form.Label>
+              <Form.Control onChange={e => setData(e.target.value)} />
+            </Form.Group>
+            <Button variant="outline-primary" type="submit">Send Data</Button>{''}
+          </Form>
+        </div>
       </header>
     </div>
   );
